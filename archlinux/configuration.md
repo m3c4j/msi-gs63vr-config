@@ -50,6 +50,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
+###### zoxide
+
+```shell
+# arch
+sudo pacman -S zoxide
+```
+
 ##### Enable Oh My ZSH!
 
 ```shell
@@ -65,9 +72,9 @@ ZSH_THEME="zeta"
 # wd web
 # 这样就可以完成目录切换了，非常方便。
 plugins=(autojump extract git wd z zsh-syntax-highlighting zsh-autosuggestions)
+
+plugins=(autojump zoxide z zsh-syntax-highlighting zsh-autosuggestions)
 ```
-
-
 
 ```shell
 which zsh
